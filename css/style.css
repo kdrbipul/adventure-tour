@@ -4,21 +4,36 @@
     box-sizing:border-box;
 }
 body{
-    /* background-color:red; */
+    /* background-color:red; */  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*-- css header part start here --*/
 .container{
     max-width:1100px;
     /* border:1px solid black; */
     text-align:center;
     margin:0 auto;
 }
+
+header{
+    background-image: url('../images/dawn.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:rgba(0, 0, 0, 0.356);
+    background-blend-mode: multiply;
+}
 .header{
     display:flex;
     justify-content: space-between;
+    /* align-items:center; */
+    padding:20px;
+    
+    
 }
 .header .left_header h3{
     text-transform: uppercase;
     font-size:500;
+    color:white;
 }
 .right_header{
 
@@ -34,7 +49,114 @@ body{
 }
 .right_header ul li a{
    text-decoration:none;
-   color:black;
-   font-size:1.15rem;
+   color:white;
+   font-size:20px;
    text-transform: capitalize;
+   background-color:#dd8686;
+   padding:4px;
+   margin:4px;
+   border:1px solid black;
+   border-radius:5px;
 }
+.right_header ul li a:hover{
+    background-color:aqua;
+    color:black;
+}
+.down_header{
+    margin:250px 250px 50px 250px;
+    text-align:center;
+    padding:100px;
+}
+.down_header .container{
+    margin: 0 auto;
+}
+.down_header h3{
+    margin-bottom:10px;
+    color:white;
+    font-size:28px;
+}
+.underline{
+    width:65px;
+    height:3px;
+    background-color:red;
+    margin:0 auto;
+}
+.down_header h1{
+    text-transform:uppercase;
+    margin:20px auto;
+    color:white;
+    font-size:3rem;
+}
+.down_header .btn{
+    text-transform:capitalize;
+    width:120px;
+    padding:9px;
+    background-color:tomato;
+    color:white;
+    border:1px solid black;
+    border-radius:5px;
+    font-size:18px;
+}
+.down_header .btn:hover{
+    background-color:aqua;
+    color:black;
+}
+/*-- css header part end here --*/
+/*-- main part start here --*/
+.main{
+    padding:50px;
+}
+.event h1{
+    font-size:30px;
+    text-transform:uppercase;
+    padding:15px;
+}
+.main_image{
+    padding:35px;
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+}
+.right_image{
+    box-shadow: 10px 10px 5px #aaaaaa;
+    display:inline-block;
+}
+.right_image img{
+    width:250px;
+    height:200px;
+    
+}
+.right_image h1{
+    text-align:center;
+    text-transform: uppercase;
+}
+.right_article{
+    width:250px;
+    word-wrap: break-word;
+    text-align:center;
+}
+
+
+.left_image{
+    box-shadow: 10px 10px 5px #aaaaaa;
+    display:inline-block;
+}
+.left_image img{
+    width:250px;
+    height:200px;
+    
+}
+.left_image h1{
+    text-align:center;
+    text-transform: uppercase;
+}
+.left_article{
+    width:250px;
+    word-wrap: break-word;
+    text-align:center;
+}
+.image_details{
+    text-decoration: none;
+    text-transform:capitalize;
+}
+/*-- main part end here --*/
