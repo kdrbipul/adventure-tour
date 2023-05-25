@@ -7,6 +7,9 @@ body{
     /* background-color:red; */  
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+img{
+    max-width: 100%;
+}
 /*-- css header part start here --*/
 .container{
     max-width:1100px;
@@ -114,7 +117,7 @@ header{
 .main_image{
     padding:35px;
     display:flex;
-    gap:2rem;
+    gap:10rem;
     justify-content: center;
 }
 .right_image{
@@ -158,5 +161,45 @@ header{
 .image_details{
     text-decoration: none;
     text-transform:capitalize;
+}
+#blog{
+    padding:100px 0;
+    background-image:url('../images/father.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:rgba(0, 0, 0, 0.171);
+    background-blend-mode:multiply;
+    color:white;
+    /* margin-bottom:500px; */
+}
+.blog_article{
+    width:345px;
+    word-wrap:break-word;
+    text-align:left;
+    padding:15px;
+}
+.blog_article h1{
+    text-transform:uppercase;
+    font-size:25px;
+    margin-left:121px;
+}
+.blog_article p{
+    margin-left:121px;
+    margin-bottom:10px;
+}
+.blog_article a{
+    margin-left:121px;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:white;
+    cursor:pointer;
+    background-color:rgb(88, 88, 250);
+    padding:5px;
+    border:1px solid black;
+    border-radius:5px;
+}
+.blog_article a:hover{
+    background-color:tomato;
+    color:black;
 }
 /*-- main part end here --*/
